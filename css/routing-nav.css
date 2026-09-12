@@ -1,0 +1,2 @@
+.routing-arrow{position:absolute;z-index:5;top:50%;display:grid;place-items:center;width:52px;height:52px;border:1px solid #725cff;border-radius:50%;background:#0a1229dd;color:#fff;font-size:38px;cursor:pointer;transform:translateY(-50%);box-shadow:0 0 18px #5b4dff55}.routing-arrow:hover{border-color:#b19cff}.routing-prev{left:2%}.routing-next{right:2%}
+@media(max-width:760px){.routing-arrow{position:relative;top:auto;transform:none;margin:5px 8px 12px}.routing-prev{left:30%}.routing-next{right:auto;left:30%}}

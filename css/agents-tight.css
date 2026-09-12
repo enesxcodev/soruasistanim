@@ -1,0 +1,81 @@
+.graph-node {
+    max-width: 225px
+}
+
+.graph-node strong {
+    font-size: 10px;
+    line-height: 1.15;
+    overflow-wrap: anywhere
+}
+
+.node-output {
+    left: 27%;
+    top: 89%
+}
+
+.node-token {
+    right: 33%;
+    top: 86%;
+}
+
+.node-previous {
+    left: 15%;
+    top: 78%
+}
+
+.node-avoid {
+    right: 15%;
+    top: 78%
+}
+
+.node-popup {
+    max-width: 250px
+}
+
+@media(max-width: 1100px) {
+    .graph-node {
+        max-width:190px
+    }
+
+    .graph-node strong {
+        font-size: 9px
+    }
+
+    .node-output {
+        left: 24%
+    }
+
+    .node-token {
+        right: 3%
+    }
+}
+
+@media(max-width: 760px) {
+    .graph-node {
+        max-width:145px
+    }
+
+    .graph-node strong {
+        font-size: 8px
+    }
+
+    .node-output {
+        left: 8%;
+        top: 91%
+    }
+
+    .node-token {
+        right: 2%;
+        top: 97%
+    }
+
+    .node-previous {
+        left: 3%;
+        top: 78%
+    }
+
+    .node-avoid {
+        right: 3%;
+        top: 78%
+    }
+}

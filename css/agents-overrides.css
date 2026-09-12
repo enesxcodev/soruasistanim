@@ -1,0 +1,88 @@
+.graph-arrow {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    display: grid;
+    place-items: center;
+    width: 56px;
+    height: 56px;
+    border: 1px solid #6b5cff;
+    border-radius: 50%;
+    background: #0a1229dd;
+    color: #f3f5ff;
+    font-size: 42px;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: 0 0 18px #5b4dff55;
+    transition: transform .2s,border-color .2s
+}
+
+.graph-arrow:hover {
+    transform: scale(1.08);
+    border-color: #b09cff
+}
+
+.graph-prev {
+    left: 2%
+}
+
+.graph-next {
+    right: 2%
+}
+
+.slide-nav .slide-arrow {
+    display: none
+}
+
+.node-output {
+    left: 34%;
+    top: 85%
+}
+
+.node-token {
+    right: 33%;
+    top: 86%;
+}
+
+@media(max-width: 760px) {
+    .graph-stage {
+        height:720px
+    }
+
+    .node-previous {
+        top: 77%
+    }
+
+    .node-output {
+        left: 18%;
+        top: 88%
+    }
+
+    .node-avoid {
+        top: 77%
+    }
+
+    .node-token {
+        right: 18%;
+        top: 97%
+    }
+
+    .graph-arrow {
+        top: 103%;
+        width: 46px;
+        height: 46px;
+        font-size: 34px
+    }
+
+    .graph-prev {
+        left: 25%
+    }
+
+    .graph-next {
+        right: 25%
+    }
+
+    .slide-nav {
+        margin-top: 68px
+    }
+}

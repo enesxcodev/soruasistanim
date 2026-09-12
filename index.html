@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="SoruAsistanım teknik case study ve mühendislik portfolyosu."
+    />
+    <title>SoruAsistanım — Engineering Case Study</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%236a45ff'/%3E%3Cpath d='M18 22h28v20H18z' fill='none' stroke='white' stroke-width='5'/%3E%3Cpath d='M25 48l5-6h10l5 6' fill='none' stroke='white' stroke-width='5'/%3E%3C/svg%3E"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ["Inter", "ui-sans-serif", "system-ui"] },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Kalam:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/hero-overrides.css" />
+    <link rel="stylesheet" href="css/agents-overrides.css" />
+  <link rel="stylesheet" href="css/agents-tight.css" />
+  <link rel="stylesheet" href="css/routing-slide.css" />
+  <link rel="stylesheet" href="css/routing-nav.css" />
+  <link rel="stylesheet" href="css/pipeline-slide.css" />
+  <link rel="stylesheet" href="css/examples-slide.css" />
+  <link rel="stylesheet" href="css/examples-slider.css" />
+  <link rel="stylesheet" href="css/examples-arrows.css" />
+  <link rel="stylesheet" href="css/mobile-slider-arrows.css" />
+  <link rel="stylesheet" href="css/image-zoom.css" />
+  <link rel="stylesheet" href="css/benchmark-slide.css" />
+  <link rel="stylesheet" href="css/final-section.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <header class="site-nav">
+      <a class="brand" href="#project"
+        ><span class="brand-mark">◈</span><span>SoruAsistanım</span></a
+      >
+      <nav aria-label="Ana navigasyon">
+        <a class="nav-link active" data-section="project" href="#project"
+          >Ana Sayfa</a
+        >
+        <a class="nav-link" data-section="architecture" href="#architecture"
+          >Mimari</a
+        >
+        <a class="nav-link muted-link" href="#agents">AI &amp; Agent</a>
+        <a class="nav-link muted-link" href="#examples">Örnekler</a>
+        <a class="nav-link muted-link" data-section="cost" href="#cost">Final</a>
+      </nav>
+      <a class="demo-button" href="https://soruasistanim.com/giris" target="_blank" rel="noopener">Demo'ya Git <span>→</span></a>
+    </header>
+    <div class="progress"><span></span></div>
+
+    <main id="presentation">
+      <section id="project" class="section hero-section">
+        <div class="hero-glow glow-a"></div>
+        <div class="hero-glow glow-b"></div>
+        <div class="hero-copy reveal">
+          <div class="eyebrow">
+            <i></i> <span class="terminal-dot">⌘</span> CLINE + CODEX İLE
+            GELİŞTİRİLDİ
+          </div>
+          <h1><em>Agentlarla</em> Full-Stack Geliştirilen Bir Sistem.</h1>
+          <div class="stack-label">DEVELOPMENT STACK</div>
+          <div class="model-chips">
+            <span>DeepSeek V4 Pro</span><span>DeepSeek V4 Flash</span
+            ><span>Kimi K3</span><span>OpenAI GPT-5.6 Sol — Medium</span
+            ><span>OpenAI GPT-5.6 Tera — Limited</span>
+          </div>
+          <div class="pipeline">
+            <div>
+              <b>◷</b
+              ><span
+                ><strong>Otomatik Üretim</strong
+                ><small>Her 5 dakikada bir TickerQ schedule.</small></span
+              >
+            </div>
+            <div>
+              <b>✦</b
+              ><span
+                ><strong>Multi-Model Generation</strong
+                ><small>GPT-4.1 mini + Gemini 3.5 Flash-Lite.</small></span
+              >
+            </div>
+            <div>
+              <b>✓</b
+              ><span
+                ><strong>Controlled Generation</strong
+                ><small>Tanımlı eğitim ve içerik kuralları.</small></span
+              >
+            </div>
+          </div>
+          <div class="hero-actions">
+            <a href="https://soruasistanim.com/giris" target="_blank" rel="noopener" class="primary-button"
+              >Canlı Demo'yu İncele <span>→</span></a
+            >
+          </div>
+          <!-- Public demo credentials only. Never place real production credentials here. -->
+          <div class="demo-access">
+            <div><b>DEMO ERİŞİMİ</b><small>Public demo hesabı</small></div>
+            <label
+              >E-posta
+              <span
+                >admin@soruasistani.com
+                <button class="copy-btn" data-copy="admin@soruasistani.com">
+                  ⧉
+                </button></span
+              ></label
+            ><label
+              >Şifre
+              <span
+                >Password123!
+                <button class="copy-btn" data-copy="Password123!">
+                  ⧉
+                </button></span
+              ></label
+            ><em class="copy-feedback">Kopyalandı</em>
+          </div>
+        </div>
+        <div class="hero-visual reveal delay-2">
+          <div class="scribble top-note">
+            Eğitimde<br />Yapay Zeka<br />Desteği
+          </div>
+          <div class="product-window">
+            <div class="window-bar">
+              <span class="window-logo">◈</span><b>SoruAsistanım</b
+              ><span class="window-user">● Ahmet Yılmaz　⌄</span>
+            </div>
+            <div class="window-body">
+              <aside>
+                <b>◈ SoruAsistanım</b><span>⌂　Ana Sayfa</span
+                ><span>✧　Soru Oluştur</span><span>▤　Soru Havuzum</span
+                ><span>▧　PDF Oluştur</span><span>♧　Sınıflarım</span>
+              </aside>
+              <div class="dashboard">
+                <div class="crumb">⌂　Dashboard</div>
+                <div class="dash-title">
+                  <h3>Soru Oluştur</h3>
+                  <button>PDF'e Aktar　✦</button>
+                </div>
+                <p>
+                  Ders, konu ve kriterlerinize göre AI destekli soru seti
+                  oluşturun.
+                </p>
+                <div class="dash-grid">
+                  <div class="form-card">
+                    <label>Ders</label>
+                    <div>Matematik　⌄</div>
+                    <label>Konu</label>
+                    <div>Doğal Sayılar　⌄</div>
+                    <label>Sınıf Seviyesi</label>
+                    <div>3. Sınıf　⌄</div>
+                    <label>Zorluk Seviyesi</label>
+                    <div>Orta　⌄</div>
+                    <button>Sonu Oluştur ✧</button>
+                  </div>
+                  <div class="question-card">
+                    <b>Oluşturulan Sorular</b>
+                    <ol>
+                      <li>
+                        Aşağıdaki sayılardan hangisi 4 basamaklıdır?
+                        <mark>Kolay</mark>
+                      </li>
+                      <li>
+                        356 sayısının onlar basamağındaki rakam kaçtır?
+                        <mark>Orta</mark>
+                      </li>
+                      <li>1000'den küçük en büyük doğal sayı kaçtır?</li>
+                      <li>Aşağıdakilerden hangisi çift sayıdır?</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="model-routing">
+            <div class="routing-heading">
+              <div>
+                <b>◌　MODEL ROUTING STRATEGY</b>
+                <p>
+                  Model seçimleri; görevin kapsamı, reasoning ihtiyacı, çalışma
+                  süresi ve kararın önem seviyesine göre yapıldı.
+                </p>
+              </div>
+              <span>RIGHT TASK <i>→</i> MODEL <i>→</i> AGENT</span>
+            </div>
+            <div class="model-grid">
+              <article class="model-card planning">
+                <strong>◈　DeepSeek V4 Pro</strong><em>PLANNING</em
+                ><span>• Planlama<br />• Mimari Kararlar</span
+                ><small
+                  >Derin analiz ve mimari karar gerektiren görevler.</small
+                >
+              </article>
+              <article class="model-card fast">
+                <strong>ϟ　DeepSeek V4 Flash</strong><em>FAST TASKS</em
+                ><span>• Kısa süreli agent işleri<br />• Küçük düzeltmeler</span
+                ><small
+                  >Hızlı sonuç gerektiren dar kapsamlı geliştirme işleri.</small
+                >
+              </article>
+              <article class="model-card long">
+                <strong>◇　Kimi K3</strong><em>LONG-RUNNING</em
+                ><span>• Uzun süren agent işleri</span
+                ><small
+                  >Geniş kapsamlı ve uzun süre çalışması gereken uygulama
+                  görevleri.</small
+                >
+              </article>
+              <article class="model-card reasoning">
+                <strong>✦　GPT-5.6 Sol</strong><em>REASONING + DESIGN</em
+                ><span
+                  >• Planlama<br />• Mimari Kararlar<br />• Görsel Tasarım</span
+                ><small
+                  >Yüksek reasoning gerektiren planlama, mimari ve tasarım
+                  kararları.</small
+                >
+              </article>
+              <article class="model-card important">
+                <strong>⬡　GPT-5.6 Tera</strong><em>LONG-RUNNING</em
+                ><span>• Önemli kararlarda uzun süren agent işleri</span
+                ><small
+                  >Planı belirlenmiş, önemli ve uzun süreli agent uygulama
+                  görevleri.</small
+                >
+              </article>
+            </div>
+          </div>
+          <div class="float-card ai-card">
+            <span class="float-icon purple">◷</span>
+            <div>
+              <b>TickerQ Scheduler</b>
+              <p>5 dakikalık otomatik üretim döngüsü.</p>
+            </div>
+          </div>
+          <div class="float-card pdf-card">
+            <span class="float-icon violet">✦</span>
+            <div>
+              <b>Multi-Model AI</b>
+              <p>GPT-4.1 mini + Gemini.</p>
+            </div>
+          </div>
+          <div class="float-card curriculum-card">
+            <span class="float-icon cyan">✓</span>
+            <div>
+              <b>Structured Output</b>
+              <p>Kontrollü soru üretim pipeline'ı.</p>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-cue">
+          <span class="mouse">⌇</span><span>Keşfetmek için kaydır</span><b>⌄</b>
+        </div>
+      </section>
+
+      <section id="architecture" class="section architecture-section">
+        <div class="side-index">
+          <span>01<br /><small>Proje</small></span
+          ><span class="current">02<br /><small>Mimari</small></span
+          ><span>03<br /><small>AI &amp; Agent</small></span
+          ><span>04<br /><small>Örnekler</small></span
+          ><span>05<br /><small>Final</small></span>
+        </div>
+        <div class="arch-content">
+          <div class="arch-topline">
+            <div class="arch-heading reveal">
+              <div class="eyebrow">Kullandığım Mimariler</div>
+              <h2>Doğru Mimari,<br /><em>Sürdürülebilir</em> Başarı.</h2>
+              <p>
+                Agentlarla geliştirilen projelerde mimari seçimler, sadece
+                bugünü değil yarını da düşünmeyi gerektirir.
+              </p>
+            </div>
+            <div class="arch-story reveal">
+              <p>
+                Doğru mimari, bir projeyi sadece çalışır hale getirmez;
+                sürdürülebilir de kılar. Agentlarla geliştirilen yapılarda
+                katmanların, sorumlulukların ve akışın net olması; hem bugünkü
+                geliştirme sürecini hem de yarın projeyi devralacak
+                geliştiricinin işini kolaylaştırır.
+              </p>
+              <p>
+                Bu projede önceliğim overengineering değildi. Amacım; ihtiyaçtan
+                büyük bir sistem kurmak değil, ihtiyaçları doğru okuyup en uygun
+                yapıyı seçmekti.
+              </p>
+              <p>
+                Bu yüzden CQRS, Redis, RabbitMQ, Kafka veya Kubernetes gibi
+                teknolojileri kullanmış olmak için eklemedim. Hedef: en fazla
+                teknoloji değil, ihtiyaca en doğru mimari.
+              </p>
+            </div>
+            <div class="quote reveal">
+              “En fazla teknoloji değil,<br />ihtiyaca en doğru mimari.”<small
+                >— SoruAsistanım</small
+              >
+            </div>
+          </div>
+          <div class="inventory-title reveal">KULLANILAN TEKNOLOJİLER</div>
+          <div class="inventory-grid">
+            <article class="inventory-card reveal">
+              <div class="inventory-head">
+                <span class="tech-icon purple">▤</span>
+                <div>
+                  <h3>Backend</h3>
+                  <p>Güçlü ve ölçeklenebilir API</p>
+                </div>
+              </div>
+              <div class="inventory-items">
+                <span
+                  ><b>ASP.NET Core 9</b
+                  ><small>Web API &amp; Admin (MVC)</small></span
+                ><span
+                  ><b>Entity Framework Core 9</b
+                  ><small>Veri erişimi ve migrations</small></span
+                ><span
+                  ><b>FluentValidation</b
+                  ><small>DTO ve request doğrulama</small></span
+                ><span
+                  ><b>Scalar / OpenAPI</b
+                  ><small>API dokümantasyonu</small></span
+                >
+              </div>
+            </article>
+            <article class="inventory-card reveal">
+              <div class="inventory-head">
+                <span class="tech-icon cyan">▣</span>
+                <div>
+                  <h3>Frontend</h3>
+                  <p>Modern ve kullanıcı dostu arayüz</p>
+                </div>
+              </div>
+              <div class="inventory-items">
+                <span><b>React 19</b><small>Modern UI geliştirme</small></span
+                ><span><b>Vite</b><small>Hızlı geliştirme ortamı</small></span
+                ><span
+                  ><b>Tailwind CSS + HeroUI</b
+                  ><small>Modern ve tutarlı tasarım</small></span
+                ><span
+                  ><b>TanStack Query</b
+                  ><small>Veri yönetimi ve cache</small></span
+                ><span
+                  ><b>React Hook Form + Zod</b
+                  ><small>Form yönetimi ve doğrulama</small></span
+                >
+              </div>
+            </article>
+            <article class="inventory-card reveal">
+              <div class="inventory-head">
+                <span class="tech-icon green">▰</span>
+                <div>
+                  <h3>Design Patterns</h3>
+                  <p>Temiz ve sürdürülebilir yapı</p>
+                </div>
+              </div>
+              <div class="inventory-items">
+                <span
+                  ><b>Clean Architecture</b><small>Katmanlı mimari</small></span
+                ><span
+                  ><b>Repository Pattern</b
+                  ><small>Veri erişim soyutlama katmanı</small></span
+                ><span><b>Unit of Work</b><small>Veri tutarlılığı</small></span
+                ><span
+                  ><b>Dependency Injection</b
+                  ><small>Gevşek bağlı, test edilebilir yapı</small></span
+                ><span
+                  ><b>Result,Spesification Pattern</b
+                  ><small>Tutarlı hata yönetimi</small></span
+                >
+              </div>
+            </article>
+            <article class="inventory-card reveal">
+              <div class="inventory-head">
+                <span class="tech-icon violet">♙</span>
+                <div>
+                  <h3>AI &amp; LLM</h3>
+                  <p>Akıllı soru üretim altyapısı</p>
+                </div>
+              </div>
+              <div class="inventory-items">
+                <span
+                  ><b>Google Gemini</b><small>Ana AI sağlayıcısı</small></span
+                ><span
+                  ><b>OpenAI API</b
+                  ><small>Manuel üretim provider'ı</small></span
+                ><span
+                  ><b>Structured JSON Output</b
+                  ><small>Güvenilir ve tutarlı içerik</small></span
+                ><span
+                  ><b>Retry &amp; Fallback</b
+                  ><small>Hata toleranslı üretim akışı</small></span
+                ><span
+                  ><b>TickerQ Scheduler</b
+                  ><small>5 dakikada bir otomatik üretim</small></span
+                >
+              </div>
+            </article>
+            <article class="inventory-card reveal">
+              <div class="inventory-head">
+                <span class="tech-icon cyan">☁</span>
+                <div>
+                  <h3>DevOps</h3>
+                  <p>Güvenli ve modern dağıtım</p>
+                </div>
+              </div>
+              <div class="inventory-items">
+                <span
+                  ><b>Docker + Docker Compose</b
+                  ><small>Tüm servisler container'larda</small></span
+                ><span
+                  ><b>Nginx</b><small>Frontend için reverse proxy</small></span
+                ><span><b>Traefik</b><small>Local reverse proxy</small></span
+                ><span><b>Coolify</b><small>Production deployment</small></span
+                ><span
+                  ><b>Serilog + Seq</b><small>Loglama ve izleme</small></span
+                >
+              </div>
+            </article>
+          </div>
+          <div class="excluded-callout reveal">
+            <div class="excluded-title">
+              <b>−</b>
+              <div>
+                <strong>Bilinçli Olarak Tercih Edilmeyenler</strong
+                ><small
+                  >Proje ölçeği ve ihtiyaçları doğrultusunda bu teknolojilere bu
+                  aşamada ihtiyaç duyulmadı.</small
+                >
+              </div>
+            </div>
+            <div class="excluded-tags">
+              <span>CQRS</span><span>Redis</span><span>RabbitMQ</span
+              ><span>Kafka</span><span>Kubernetes</span>
+            </div>
+            <div class="excluded-note">
+              En fazla teknoloji değil,<br />ihtiyaca en doğru mimari.
+            </div>
+          </div>
+        </div>
+        <div class="arch-scroll-cue">
+          <span class="mouse">⌇</span><span>Sonraki bölüm için kaydır</span
+          ><b>⌄</b>
+        </div>
+      </section>
+      <section id="agents" class="section agents-section">
+        <div class="agents-index">
+          <span>01<br /><small>Proje</small></span
+          ><span>02<br /><small>Mimari</small></span
+          ><span class="current">03<br /><small>AI &amp; Agent</small></span
+          ><span>04<br /><small>Örnekler</small></span
+          ><span>05<br /><small>Final</small></span>
+        </div>
+        <div class="agents-content">
+          <div class="agents-heading reveal">
+            <div class="eyebrow">AI &amp; AGENT WORKFLOW</div>
+            <h2><em>AGENT</em> Rule / Workflow</h2>
+            <p>
+              Agentlarla çalışırken en önemli konulardan biri doğru context ve
+              yönergeleri sağlamaktır.
+            </p>
+            <p>
+              Projede kullanılan teknolojiler, mimari yapı, SOLID prensipleri,
+              best practice'ler, mevcut kod stili ve görev sırasında hangi
+              dosyalara yönlenmesi gerektiği açıkça tanımlanmadığında modelin
+              hallucination, gereksiz token tüketimi ve overengineering riski
+              artar.
+            </p>
+            <p>
+              Bu kurallar doğru tanımlandığında agent daha az context ile, daha
+              tutarlı ve proje mimarisine uygun çalışabilir.
+            </p>
+            <p style="color: antiquewhite;">Aşağıda agent'ın çalışması için örnek md dosyaların bir kısmını paylaştım tıklayıp içeriğini görebilirsiniz. </p>
+          </div>
+          <div class="graph-stage reveal">
+            <svg
+              class="graph-lines"
+              viewBox="0 0 1000 500"
+              preserveAspectRatio="none"
+              aria-hidden="true"
+            >
+              <g class="primary-lines">
+                <path
+                  data-link="project"
+                  d="M500 250 C470 215 410 160 350 105"
+                />
+                <path data-link="stack" d="M500 250 C430 215 290 195 145 190" />
+                <path
+                  data-link="architecture"
+                  d="M500 250 C410 250 300 250 125 270"
+                />
+                <path data-link="style" d="M500 250 C405 300 270 330 130 350" />
+                <path
+                  data-link="previous"
+                  d="M500 250 C440 350 330 405 210 430"
+                />
+                <path
+                  data-link="output"
+                  d="M500 250 C500 345 500 405 390 455"
+                />
+                <path data-link="task" d="M500 250 C570 210 700 170 850 185" />
+                <path data-link="files" d="M500 250 C600 245 720 255 865 270" />
+                <path data-link="solid" d="M500 250 C605 300 740 325 865 350" />
+                <path data-link="avoid" d="M500 250 C585 350 700 400 820 420" />
+                <path data-link="token" d="M500 250 C585 350 710 425 575 460" />
+              </g>
+              <g class="secondary-lines">
+                <path
+                  data-link="architecture-solid"
+                  d="M125 270 C300 205 690 300 865 350"
+                />
+                <path
+                  data-link="project-files"
+                  d="M350 105 C530 120 690 230 865 270"
+                />
+                <path
+                  data-link="style-previous"
+                  d="M130 350 C240 390 260 415 210 430"
+                />
+                <path
+                  data-link="task-output"
+                  d="M850 185 C720 320 610 420 500 455"
+                />
+              </g>
+              <g class="flow-dots">
+                <circle r="3">
+                  <animateMotion
+                    dur="3.8s"
+                    repeatCount="indefinite"
+                    path="M500 250 C470 215 210 260 150 105"
+                  />
+                </circle>
+                <circle r="3">
+                  <animateMotion
+                    dur="4.5s"
+                    repeatCount="indefinite"
+                    path="M500 250 C605 300 740 325 865 350"
+                  />
+                </circle>
+              </g>
+            </svg>
+            <div class="graph-halo"></div>
+            <button class="graph-node center-node" data-node="center">
+              <span class="node-icon">♧</span
+              ><strong>Agent<br />Context</strong></button
+            ><button class="graph-node node-project" data-node="project">
+              <span class="node-icon">▣</span
+              ><span
+                ><strong>Project Structure</strong
+                ><small>kurallar ve yönlendirmeler</small></span
+              ></button
+            ><button class="graph-node node-stack" data-node="stack">
+              <span class="node-icon">▰</span
+              ><span
+                ><strong>Tech Stack Knowledge</strong
+                ><small>frontend paketleri</small></span
+              ></button
+            ><button
+              class="graph-node node-architecture"
+              data-node="architecture"
+            >
+              <span class="node-icon">♧</span
+              ><span
+                ><strong>Architecture Rules</strong
+                ><small>Mimari yapı ve katmanlar</small></span
+              ></button
+            ><button class="graph-node node-style" data-node="style">
+              <span class="node-icon">&lt;/&gt;</span
+              ><span
+                ><strong>Code Style &amp; Best Practices</strong
+                ><small>Kod yazarken uyulacak kurallar</small></span
+              ></button
+            ><button class="graph-node node-previous" data-node="previous">
+              <span class="node-icon">▤</span
+              ><span
+                ><strong>Previous Projects</strong
+                ><small>Yeni oturum hafızası</small></span
+              ></button
+            ><button class="graph-node node-output" data-node="output">
+              <span class="node-icon">▤</span
+              ><span
+                ><strong>Output Guidelines</strong
+                ><small>API mimarisi</small></span
+              ></button
+            ><button class="graph-node node-task" data-node="task">
+              <span class="node-icon">☷</span
+              ><span
+                ><strong>Task Instructions</strong
+                ><small>Planlamada ekstra token tasarrufu</small></span
+              ></button
+            ><button class="graph-node node-files" data-node="files">
+              <span class="node-icon">▧</span
+              ><span
+                ><strong>Relevant Files</strong
+                ><small>Hangi dosyalarla çalışılacağı</small></span
+              ></button
+            ><button class="graph-node node-solid" data-node="solid">
+              <span class="node-icon">✓</span
+              ><span
+                ><strong>SOLID Principles</strong
+                ><small>mevcutu kullan olanı üretme</small></span
+              ></button
+            ><button class="graph-node node-avoid" data-node="avoid">
+              <span class="node-icon">⊘</span
+              ><span
+                ><strong>Avoid Hallucination</strong
+                ><small>user login gereksinimleri</small></span
+              ></button
+            ><button class="graph-node node-token" data-node="token">
+              <span class="node-icon">ϟ</span
+              ><span
+                ><strong>Token Efficiency</strong
+                ><small>frontend servisleri</small></span
+              >
+            </button>
+            <div class="node-popup" aria-hidden="true">
+              <button class="popup-close">×</button
+              ><strong class="popup-title"></strong>
+              <p class="popup-copy"></p>
+              <a class="popup-link" target="_blank" rel="noopener"
+                >MD dosyasını aç →</a
+              >
+            </div>
+          </div>
+          <div class="slide-nav">
+            <button class="slide-arrow prev" aria-label="Önceki slide">
+              ‹
+            </button>
+            <div class="slide-dots">
+              <i class="active"></i><i></i><i></i><i></i><i></i>
+            </div>
+            <button class="slide-arrow next" aria-label="Sonraki slide">
+              ›
+            </button>
+          </div>
+          <div class="slide-labels">
+            <span class="active">01 Agent Rule</span
+            ><span>02 Model Routing</span><span>03 Development Flow</span
+            ><span>04 AI Pipeline</span><span>05 Real Examples</span>
+          </div>
+        </div>
+        <div class="agents-note">
+          💡<span>Doğru bağlam,<br />daha iyi sonuçlar.</span>
+        </div>
+      </section>
+    <section id="examples" class="section examples-section"><div class="examples-index"><span>01<br><small>Proje</small></span><span>02<br><small>Mimari</small></span><span>03<br><small>AI &amp; Agent</small></span><span class="current">04<br><small>Örnekler</small></span><span>05<br><small>Maliyet</small></span></div><div class="examples-content"><div class="examples-slide open"><div class="examples-heading reveal"><span>REAL EXAMPLES / PROMPT ENGINEERING</span><h2>Prompt Engineering <em>Standartım</em></h2><p>Projede kullandığım prompt listeleri; modelin <b>neye odaklanacağını</b>, <b>nerede duracağını</b> ve çıktının <b>nasıl doğrulanacağını</b> açıkça tanımlar.</p></div><div class="prompt-standard reveal"><div class="prompt-visual"><img src="assets/images/0.png" alt="SoruAsistanım manuel soru üretimi ekranı" /></div><div class="prompt-principles"><article><b class="accent-purple">01 · Amaç</b><p>Model önce isteğin amacını anlamalıdır: planlamamı yoksa yeni bir görev mi, mevcut isteğin güncellemesi mi, yoksa istenmeyen davranışları engelleyen bir düzeltme mi?</p></article><article><b class="accent-cyan">02 · Kısıtlama</b><p>Belirsiz görevler modeli gereksiz alanları taramaya iter. Net sınırlar, hallucination ve token maliyetini azaltır.</p></article><article><b class="accent-blue">03 · İstenen Değişiklik</b><p>Bağlam; modelin düşünme biçimine uygun, yazılımcı refleksiyle somut bir değişiklik hedefi olarak kurulur.</p></article><article><b class="accent-violet">04 · Referans Dosyalar</b><p>Doğrudan ilgili dosyalar verilerek context alanı daraltılır; model doğru çağrı zincirine yönelir.</p></article><article><b class="accent-teal">05 · Test &amp; Doğrulama</b><p>Çıktının belirlenen bağlama ve beklenen davranışa uyduğu build, lint veya ilgili kontrollerle doğrulanır.</p></article><article><b class="accent-pink">06 · Çıktı</b><p>Yanıt, yalnız kritik bulguları ve gerekli değişiklikleri içerecek şekilde sınırlandırılır.</p></article></div></div><div class="prompt-outcome"><b>AMAÇ <i>→</i> KISITLAMA <i>→</i> REFERANS DOSYALAR <i>→</i> DOĞRULAMA <i>→</i> NET ÇIKTI</b><span>Daha az token · Daha az belirsizlik · Daha güvenilir uygulama</span></div></div><div class="examples-nav"><i class="active"></i><span class="active">01 Prompt Engineering Standardı</span></div></div></section>
+    <section id="cost" class="section final-section"><div class="final-content reveal"><span class="final-eyebrow">FINAL / PHASE ONE</span><h2>Bu sadece <em>FAZ 1.</em></h2><p>Faz 1 için bu projenin agent geliştirme maliyeti <b class="final-cost">$50 altında</b> kaldı. Buna karşılık kurduğum <b class="final-memory">custom agent memory</b>, projeye gelen bir yazılımcının, vibe coder'ın veya agent'ın sistemi anlamak için ek bir bağlam toplama çabasına girmemesini hedefliyor.</p><div class="final-grid"><article><b>◎ Okunabilir Bağlam</b><span>Çoğu methodun başında Türkçe açıklama yorumları bulunur; isimlendirmeler, kodun ne yaptığını teknik olmayan biri için de takip edilebilir kılar.</span></article><article><b>◇ Sürdürülebilirlik</b><span>Bu yaklaşımın amacı yalnız bugünkü geliştirme hızını değil, projeyi yarın devralacak kişinin hızlı adapte olmasını sağlamaktır.</span></article><article><b>✦ Faz 2 / PDF RAG</b><span>Öğretmenlerin yükleyeceği PDF'ler anlamlı chunk'lara ayrılacak; Voyage API ile kaynağa bağlı ve izlenebilir soru üretimi yapılacak.</span></article></div><div class="final-message">Sürdürülebilirlik, yalnız çalışan kod değil; <strong>anlaşılabilir ve geliştirilebilir kod</strong> üretmektir.</div><p class="final-thanks">İncelediğiniz için teşekkürler.</p></div></section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

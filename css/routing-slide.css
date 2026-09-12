@@ -1,0 +1,288 @@
+.routing-slide {
+    display: none;
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: left
+}
+
+.routing-slide.open {
+    display: block
+}
+
+.routing-intro {
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    gap: 40px;
+    align-items: center;
+    margin: 0 auto 18px;
+    max-width: 1050px;
+    text-align: center
+}
+
+.routing-intro span {
+    color: #9a8ff4;
+    font-size: 11px;
+    letter-spacing: .2em
+}
+
+.routing-intro h2 {
+    margin: 8px 0;
+    font-size: 42px;
+    letter-spacing: -.045em
+}
+
+.routing-intro h2 em {
+    font-style: normal;
+    background: linear-gradient(90deg,#984bff,#33a9ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent
+}
+
+.routing-intro p {
+    margin: 0;
+    color: #bdc9e2;
+    font-size: 13px;
+    line-height: 1.5
+}
+
+.routing-intro aside {
+    padding: 19px;
+    border: 1px solid #693be1;
+    border-radius: 14px;
+    background: #21135099;
+    color: #eef0ff;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.45
+}
+
+.routing-intro aside small {
+    display: block;
+    color: #a891fa;
+    font-size: 9px;
+    margin-top: 10px
+}
+
+.routing-board {
+    display: grid;
+    grid-template-columns: 1fr .92fr 1.18fr;
+    gap: 35px;
+    align-items: center;
+    max-width: 1280px;
+    margin: auto
+}
+
+.signal-card,.rules-card {
+    padding: 18px;
+    border: 1px solid #294c82;
+    border-radius: 16px;
+    background: linear-gradient(135deg,#101f3ce8,#0b1530db);
+    box-shadow: 0 15px 30px #0004
+}
+
+.signal-card h3,.rules-card h3 {
+    margin: 0;
+    color: #fff;
+    font-size: 17px
+}
+
+.signal-card>p,.rules-card>p {
+    margin: 5px 0 14px;
+    color: #aebddb;
+    font-size: 10px
+}
+
+.signal-card>div,.rules-card>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    padding: 11px 12px;
+    border-radius: 10px;
+    background: #142545c8
+}
+
+.signal-card b,.rules-card b {
+    font-size: 12px
+}
+
+.signal-card span,.rules-card small {
+    font-size: 10px;
+    color: #b6c8e8
+}
+
+.rules-card>div {
+    display: block
+}
+
+.rules-card small {
+    display: block;
+    margin-top: 4px
+}
+
+.routing-flow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px
+}
+
+.flow-step {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 11px 14px;
+    border: 1px solid #23538a;
+    border-radius: 14px;
+    background: #102344d9;
+    color: #74ccff;
+    font-size: 20px
+}
+
+.flow-step b {
+    display: block;
+    color: #f4f7ff;
+    font-size: 12px
+}
+
+.flow-step small {
+    display: block;
+    color: #b1c0dd;
+    font-size: 9px;
+    margin-top: 3px
+}
+
+.routing-flow>i {
+    color: #48a8ff;
+    font-size: 24px;
+    font-style: normal
+}
+
+.routing-engine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 90%;
+    padding: 23px 12px;
+    border: 1px solid #9b59ff;
+    border-radius: 30px;
+    background: radial-gradient(circle,#4f2b9a 0,#102d67 70%);
+    box-shadow: 0 0 30px #5539e877;
+    color: #f4eaff;
+    text-align: center;
+    font-size: 31px
+}
+
+.routing-engine b {
+    font-size: 16px
+}
+
+.routing-engine small {
+    color: #d2d9f2;
+    font-size: 10px;
+    line-height: 1.4
+}
+
+.routing-outcome {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 14px;
+    padding: 14px 20px;
+    border: 1px solid #23518b;
+    border-radius: 14px;
+    background: #0d1d3bda;
+    color: #aebfe0;
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+.routing-outcome b {
+    color: #fff;
+    font-size: 13px;
+    margin-right: auto
+}
+
+.routing-outcome span {
+    padding-left: 13px;
+    border-left: 1px solid #2c4a73
+}
+
+@media(max-width: 900px) {
+    .routing-board {
+        grid-template-columns:1fr 1fr;
+        gap: 14px
+    }
+
+    .routing-flow {
+        grid-column: 1/-1;
+        grid-row: 1
+    }
+
+    .signal-card,.rules-card {
+        grid-row: 2
+    }
+
+    .routing-intro {
+        grid-template-columns: 1fr
+    }
+
+    .routing-intro aside {
+        display: none
+    }
+}
+
+@media(max-width: 760px) {
+    .routing-intro {
+        margin-top:5px;
+        text-align: left
+    }
+
+    .routing-intro h2 {
+        font-size: 32px
+    }
+
+    .routing-intro p {
+        font-size: 12px
+    }
+
+    .routing-board {
+        display: flex;
+        flex-direction: column
+    }
+
+    .routing-flow {
+        order: 1;
+        width: 100%
+    }
+
+    .signal-card {
+        order: 2
+    }
+
+    .rules-card {
+        order: 3
+    }
+
+    .routing-outcome {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px
+    }
+
+    .routing-outcome span {
+        border-left: 0;
+        padding-left: 0
+    }
+
+    .routing-outcome b {
+        margin: 0
+    }
+
+    .routing-slide~.slide-nav {
+        margin-top: 16px
+    }
+}
